@@ -65,7 +65,7 @@ def logout():
 def requires_auth(f):
   @wraps(f)
   def decorated(*args, **kwargs):
-    if 'profile' not in session:
+    if 'user' not in session:
       # Redirect to Login page here
       return redirect('/')
     return f(*args, **kwargs) #do the normal behavior -- return as it does.
