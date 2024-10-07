@@ -8,6 +8,7 @@ flask = "*"
 authlib = "*"
 requests = "*"
 python-dotenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 
